@@ -1,0 +1,8 @@
+export { default as BrandRecognitionIcon } from "./BrandRecognitionIcon";
+export { default as DetailedRecordsIcon } from "./DetailedRecordsIcon";
+export { default as FacebookIcon } from "./FacebookIcon";
+export { default as FullyCustomizableIcon } from "./FullyCustomizableIcon";
+export { default as InstagramIcon } from "./InstagramIcon";
+export { default as LogoIcon } from "./LogoIcon";
+export { default as PinterestIcon } from "./PinterestIcon";
+export { default as TwitterIcon } from "./TwitterIcon";
