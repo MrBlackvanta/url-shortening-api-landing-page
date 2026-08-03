@@ -1,4 +1,6 @@
-export default function FullyCustomizableIcon(props: React.SVGProps<SVGSVGElement>) {
+export default function FullyCustomizableIcon(
+  props: React.SVGProps<SVGSVGElement>,
+) {
   return (
     <svg
       viewBox="0 0 48 48"

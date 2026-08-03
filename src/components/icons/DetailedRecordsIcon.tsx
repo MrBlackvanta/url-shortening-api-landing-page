@@ -1,4 +1,6 @@
-export default function DetailedRecordsIcon(props: React.SVGProps<SVGSVGElement>) {
+export default function DetailedRecordsIcon(
+  props: React.SVGProps<SVGSVGElement>,
+) {
   return (
     <svg
       viewBox="0 0 40 40"
