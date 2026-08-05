@@ -1,13 +1,53 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyan: hsl(180, 66%, 49%);
-  --color-dark-violet: hsl(257, 27%, 26%);
-  --color-red: hsl(0, 87%, 67%);
-  --color-gray: hsl(0, 0%, 75%);
-  --color-grayish-violet: hsl(257, 7%, 63%);
-  --color-very-dark-blue: hsl(255, 11%, 22%);
-  --color-very-dark-violet: hsl(260, 8%, 14%);
+  --color-cyan: hsl(180 65.7% 49.2%);
+  --color-cyan-deep: hsl(180 65.7% 31.1%);
+  --color-cyan-soft: hsl(180 56.6% 74.7%);
+  --color-dark-violet: hsl(257 27.3% 25.9%);
+  --color-dark-violet-soft: hsl(256 25.9% 33.3%);
+  --color-red: hsl(0 86.8% 67.3%);
+  --color-red-soft: hsl(0 86.8% 78.7%);
+  --color-gray: hsl(0 0% 75%);
+  --color-grayish-violet: hsl(257 7.4% 63.1%);
+  --color-grayish-violet-deep: hsl(257 7.4% 45.6%);
+  --color-very-dark-blue: hsl(255 10.9% 21.6%);
+  --color-very-dark-violet: hsl(260 8% 14%);
+  --color-off-white: hsl(225 33.3% 95.3%);
+
+  --container-page: 69.375rem;
+
+  --text-display-lg: 5rem;
+  --text-display-lg--line-height: 5.625rem;
+  --text-display: 2.625rem;
+  --text-display--line-height: 3rem;
+  --text-heading: 2.5rem;
+  --text-heading--line-height: 3rem;
+  --text-lead: 1.375rem;
+  --text-lead--line-height: 2.25rem;
+  --text-lead-sm: 1.125rem;
+  --text-lead-sm--line-height: 1.875rem;
+  --text-body: 1.125rem;
+  --text-body--line-height: 2rem;
+  --text-body-sm: 0.9375rem;
+  --text-body-sm--line-height: 1.625rem;
+  --text-field: 1.25rem;
+  --text-field--line-height: 2.25rem;
+  --text-field-sm: 1rem;
+  --text-field-sm--line-height: 2.25rem;
+  --text-note: 1rem;
+  --text-note--line-height: 1.125rem;
+  --text-title: 1.375rem;
+  --text-label: 1.25rem;
+  --text-label-md: 1.125rem;
+  --text-label-sm: 0.9375rem;
+
+  --tracking-display: -0.025em;
+  --tracking-body: 0.0068em;
+  --tracking-footer: -0.0156em;
+
+  --radius-field: 5px;
+  --radius-panel: 10px;
 }
 
 @theme inline {
@@ -16,7 +56,7 @@
 
 @layer base {
   body {
-    @apply text-grayish-violet bg-white font-sans font-medium;
+    @apply text-grayish-violet-deep bg-white font-sans font-medium;
   }
   a,
   button {
@@ -25,9 +65,25 @@
 }
 
 @utility v-focus-ring {
-  @apply focus-visible:ring-dark-violet rounded-xs focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+  @apply focus-visible:outline-cyan-deep rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2;
+}
+
+@utility v-focus-ring-inverse {
+  @apply focus-visible:outline-cyan rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2;
+}
+
+@utility v-btn-base {
+  @apply inline-flex items-center justify-center font-bold transition-colors motion-reduce:transition-none;
+}
+
+@utility v-btn {
+  @apply v-btn-base bg-cyan text-very-dark-blue hover:bg-cyan-soft;
+}
+
+@utility v-btn-copied {
+  @apply v-btn-base bg-dark-violet text-white;
 }
 
 @utility v-footer-link {
-  @apply hover:text-dark-violet rounded-xs underline underline-offset-2 transition-colors motion-reduce:transition-none;
+  @apply hover:text-cyan rounded-xs underline underline-offset-2 transition-colors motion-reduce:transition-none;
 }
