@@ -4,5 +4,6 @@ export { default as FacebookIcon } from "./FacebookIcon";
 export { default as FullyCustomizableIcon } from "./FullyCustomizableIcon";
 export { default as InstagramIcon } from "./InstagramIcon";
 export { default as LogoIcon } from "./LogoIcon";
+export { default as MenuIcon } from "./MenuIcon";
 export { default as PinterestIcon } from "./PinterestIcon";
 export { default as TwitterIcon } from "./TwitterIcon";

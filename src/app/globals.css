@@ -56,7 +56,7 @@
 
 @layer base {
   body {
-    @apply text-grayish-violet-deep bg-white font-sans font-medium;
+    @apply bg-white font-sans font-medium text-grayish-violet-deep;
   }
   a,
   button {
@@ -65,11 +65,19 @@
 }
 
 @utility v-focus-ring {
-  @apply focus-visible:outline-cyan-deep rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2;
+  @apply rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-deep;
 }
 
 @utility v-focus-ring-inverse {
-  @apply focus-visible:outline-cyan rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2;
+  @apply rounded-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan;
+}
+
+@utility v-nav-link {
+  @apply text-label-sm font-bold text-grayish-violet-deep transition-colors hover:text-very-dark-blue motion-reduce:transition-none;
+}
+
+@utility v-menu-link {
+  @apply block text-center text-label-md font-bold text-white transition-colors hover:text-cyan motion-reduce:transition-none;
 }
 
 @utility v-btn-base {
@@ -85,5 +93,5 @@
 }
 
 @utility v-footer-link {
-  @apply hover:text-cyan rounded-xs underline underline-offset-2 transition-colors motion-reduce:transition-none;
+  @apply rounded-xs underline underline-offset-2 transition-colors hover:text-cyan motion-reduce:transition-none;
 }
