@@ -73,19 +73,19 @@ export default function Shorten() {
   return (
     <section
       aria-label={shortenForm.label}
-      className="relative isolate bg-off-white px-6 pb-30 lg:px-10"
+      className="relative isolate bg-off-white px-6 pb-20 lg:px-10 lg:pb-30"
     >
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 h-20 bg-white lg:h-21"
+        className="absolute inset-x-0 top-0 -z-10 h-20 bg-white md:h-14 lg:h-21"
       />
 
       <div className="mx-auto max-w-page">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 rounded-panel bg-dark-violet bg-[url('/bg-shorten-mobile.svg')] bg-bottom-right bg-no-repeat p-6 lg:flex-row lg:items-start lg:gap-6 lg:bg-[url('/bg-shorten-desktop.svg')] lg:bg-cover lg:px-16 lg:py-13"
+          className="flex flex-col gap-4 rounded-panel bg-dark-violet bg-[url('/bg-shorten-mobile.svg')] bg-bottom-right bg-no-repeat p-6 md:flex-row md:items-start md:gap-6 md:bg-[url('/bg-shorten-desktop.svg')] md:bg-cover lg:px-16 lg:py-13"
         >
-          <div className="relative lg:flex-1">
+          <div className="relative md:flex-1">
             <label htmlFor="url" className="sr-only">
               {shortenForm.label}
             </label>
@@ -101,7 +101,7 @@ export default function Shorten() {
               placeholder={shortenForm.placeholder}
               aria-invalid={Boolean(error)}
               aria-describedby={error ? "shorten-error" : undefined}
-              className="h-12 w-full rounded-field border-3 border-transparent bg-white px-4 text-field-sm tracking-body text-very-dark-blue placeholder:text-very-dark-blue/67 aria-invalid:border-red lg:h-16 lg:rounded-panel lg:px-8 lg:text-field"
+              className="h-12 w-full rounded-field border-3 border-transparent bg-white px-4 text-field-sm tracking-body text-very-dark-blue placeholder:text-very-dark-blue/67 aria-invalid:border-red md:h-16 md:rounded-panel md:px-8 md:text-field"
             />
 
             {error && (
@@ -117,14 +117,14 @@ export default function Shorten() {
           <button
             type="submit"
             disabled={pending}
-            className="v-btn h-12 w-full shrink-0 rounded-field text-label-md disabled:bg-cyan-soft lg:h-16 lg:w-47 lg:rounded-panel lg:text-label"
+            className="v-btn h-12 w-full shrink-0 rounded-field text-label-md disabled:bg-cyan-soft md:h-16 md:w-47 md:rounded-panel md:text-label"
           >
             {shortenForm.submit}
           </button>
         </form>
 
         {links.length > 0 && (
-          <ul className="mt-6 flex flex-col gap-4">
+          <ul className="mt-6 flex flex-col gap-6 md:gap-4">
             {links.map((link) => (
               <ResultRow
                 key={link.id}

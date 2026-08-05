@@ -4,7 +4,7 @@ import MobileMenu from "./mobile-menu";
 
 export default function Header() {
   return (
-    <header className="px-6 pt-10 lg:px-10 lg:pt-12">
+    <header className="relative z-20 px-6 pt-10 lg:px-10 lg:pt-12">
       <div className="relative mx-auto flex max-w-page items-center justify-between">
         <LogoIcon className="w-30 shrink-0 self-end text-very-dark-blue" />
 

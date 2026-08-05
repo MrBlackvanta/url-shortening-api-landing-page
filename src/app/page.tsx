@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout";
-import { Hero, Shorten } from "@/views/home";
+import { Boost, Hero, Shorten, Stats } from "@/views/home";
 
 export default function Home() {
   return (
@@ -9,6 +9,8 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Shorten />
+        <Stats />
+        <Boost />
       </main>
     </div>
   );

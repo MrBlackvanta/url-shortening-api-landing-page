@@ -9,12 +9,12 @@ export default function Hero() {
         src={illustration}
         alt=""
         priority
-        className="w-lg max-w-none lg:absolute lg:top-19.5 lg:left-[calc(50%+110px)] lg:w-183.25"
+        className="w-lg max-w-none md:mx-auto lg:absolute lg:top-19.5 lg:left-[calc(50%+110px)] lg:w-183.25"
       />
 
       <div className="mx-auto max-w-page">
-        <div className="mt-9.25 text-center lg:mt-0 lg:text-left">
-          <h1 className="max-w-[8em] text-display font-bold tracking-display text-very-dark-blue lg:text-display-lg">
+        <div className="mt-9.25 text-center md:mx-auto md:max-w-120 lg:mt-0 lg:max-w-none lg:text-left">
+          <h1 className="mx-auto max-w-[8em] text-display font-bold tracking-display text-very-dark-blue lg:mx-0 lg:text-display-lg">
             {hero.title}
           </h1>
 

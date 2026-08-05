@@ -75,7 +75,7 @@ export function useShortenedLinks() {
   const links = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const add = (link: Omit<ShortLink, "id">) => {
-    publish([...links, { ...link, id: createId() }]);
+    publish([{ ...link, id: createId() }, ...links]);
   };
 
   return { links, add };
