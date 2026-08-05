@@ -117,7 +117,7 @@ export default function Shorten() {
           <button
             type="submit"
             disabled={pending}
-            className="v-btn h-12 w-full shrink-0 rounded-field text-label-md disabled:bg-cyan-soft md:h-16 md:w-47 md:rounded-panel md:text-label"
+            className="v-btn h-12 w-full shrink-0 cursor-pointer rounded-field text-label-md disabled:bg-cyan-soft md:h-16 md:w-47 md:rounded-panel md:text-label"
           >
             {shortenForm.submit}
           </button>
