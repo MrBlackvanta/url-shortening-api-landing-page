@@ -22,7 +22,8 @@ This is a solution to the [URL shortening API landing page challenge on Frontend
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/url-shortening-api-landing-page)
-- Live Site URL: [Netlify](https://vanta-url-shortening-api-landing-page.netlify.app)
+- Live Site URL: [Cloudflare](https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev)
+- Mirror: [Netlify](https://vanta-url-shortening-api-landing-page.netlify.app)
 
 ## My process
 

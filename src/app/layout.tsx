@@ -13,7 +13,7 @@ const poppins = Poppins({
 const title = "Shortly URL shortening API landing page";
 const description =
   "Shorten any link, track how it performs, and build your brand's recognition — Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://vanta-url-shortening-api-landing-page.netlify.app";
+const siteUrl = "https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

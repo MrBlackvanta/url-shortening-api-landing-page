@@ -1,4 +1,6 @@
-import { shortenForm } from "@/data";
+import { shortenForm } from "../src/data/shorten-form";
+
+type Env = { ASSETS: { fetch: (request: Request) => Promise<Response> } };
 
 const CLEAN_URI_ENDPOINT = "https://cleanuri.com/api/v1/shorten";
 const UPSTREAM_TIMEOUT_MS = 8000;
@@ -13,7 +15,7 @@ function withScheme(url: string) {
   return /^https?:\/\//i.test(url) ? url : `https://${url}`;
 }
 
-export async function POST(request: Request) {
+async function shorten(request: Request) {
   let payload: unknown;
 
   try {
@@ -61,3 +63,18 @@ export async function POST(request: Request) {
 
   return Response.json({ error: shortenForm.requestError }, { status: 502 });
 }
+
+export default {
+  async fetch(request: Request, env: Env) {
+    const { pathname } = new URL(request.url);
+
+    if (pathname === "/api/shorten") {
+      if (request.method !== "POST") {
+        return new Response(null, { status: 405, headers: { Allow: "POST" } });
+      }
+      return shorten(request);
+    }
+
+    return env.ASSETS.fetch(request);
+  },
+};

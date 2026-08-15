@@ -14,7 +14,6 @@ import type {
   HeroContent,
   NavLink,
   SectionIntro,
-  ShortenFormCopy,
   SocialLink,
 } from "./data.types";
 
@@ -33,18 +32,6 @@ export const hero: HeroContent = {
   description:
     "Build your brand’s recognition and get detailed insights on how your links are performing.",
   cta: { label: "Get Started", href: "#get-started" },
-};
-
-export const shortenForm: ShortenFormCopy = {
-  label: "Shorten a link",
-  placeholder: "Shorten a link here...",
-  submit: "Shorten It!",
-  copyAction: "Copy",
-  copiedAction: "Copied!",
-  emptyError: "Please add a link",
-  invalidError: "That link doesn’t look valid",
-  requestError: "Something went wrong. Please try again.",
-  copyError: "The link could not be copied.",
 };
 
 export const stats: SectionIntro = {
