@@ -10,10 +10,17 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const title = "Shortly URL shortening API landing page";
+const title = "Shortly | More than just shorter links";
 const description =
-  "Shorten any link, track how it performs, and build your brand's recognition — Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev";
+  "Shorten any link, then track how it performs. Branded short links with click analytics, so you can see which content earns attention.";
+const siteUrl =
+  "https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev";
+const card = {
+  url: "/opengraph-image.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Shortly, link shortening with detailed click analytics",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -24,14 +31,16 @@ export const metadata: Metadata = {
     title,
     description,
     url: "/",
-    siteName: title,
+    siteName: "Shortly",
     locale: "en_US",
     type: "website",
+    images: [card],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
+    images: [card],
   },
 };
 
