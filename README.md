@@ -23,7 +23,6 @@ This is a solution to the [URL shortening API landing page challenge on Frontend
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/url-shortening-api-landing-page)
 - Live Site URL: [Cloudflare](https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev)
-- Mirror: [Netlify](https://vanta-url-shortening-api-landing-page.netlify.app)
 
 ## My process
 
@@ -140,6 +139,6 @@ since at 768px each would be 215px wide and the body copy would run to eight lin
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
 - Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
 - LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
