@@ -1,6 +1,7 @@
 import { Footer } from "@/components/layout";
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import { siteUrl } from "@/app/site";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -13,8 +14,6 @@ const poppins = Poppins({
 const title = "Shortly | More than just shorter links";
 const description =
   "Shorten any link, then track how it performs. Branded short links with click analytics, so you can see which content earns attention.";
-const siteUrl =
-  "https://url-shortening-api-landing-page.abdelrhman-ahmed8881.workers.dev";
 const card = {
   url: "/opengraph-image.jpg",
   width: 1200,
